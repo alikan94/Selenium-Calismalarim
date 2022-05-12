@@ -13,5 +13,7 @@ public class C02_DriverMethods {
         driver.get("https://www.amazon.com");
         System.out.println("title : "+driver.getTitle());
         System.out.println("actual url : "+ driver.getCurrentUrl());
+
+        driver.close();
     }
 }

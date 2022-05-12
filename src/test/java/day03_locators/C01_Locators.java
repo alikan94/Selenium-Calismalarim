@@ -24,7 +24,17 @@ public class C01_Locators {
         Biz de o web elementini kullanmak icin bir objeye assign ederiz.
          */
 
-        WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
+        /*
+
+        <input type="text" id="twotabsearchtextbox" value="nutella" name="field-keywords"
+        autocomplete="off" placeholder="" class="nav-input nav-progressive-attribute"
+        dir="auto" tabindex="0" aria-label="Search">
+         */
+
+         WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
+        // WebElement aramaKutusu = driver.findElement(By.linkText("   "));
+        // WebElement aramaKutusu = driver.findElement(By.className("field-keywords"));
+        // bu kod çalışmadı
 
         /*
         Her hangi bir web elementine istediğimiz bir yazıyı yollamak istersek
