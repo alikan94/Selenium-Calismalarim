@@ -1,8 +1,10 @@
 package practise;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
@@ -26,6 +28,9 @@ public class ExerciseFour {
         driver.findElement(By.id("number2")).sendKeys("123");
         driver.findElement(By.id("calculate")).click();
         System.out.println("Answer is : " + driver.findElement(By.xpath("//span[@id='answer']")).getText());
+
+        Actions action=new Actions(driver);
+        action.sendKeys(Keys.PAGE_DOWN);
 
         driver.close();
     }
